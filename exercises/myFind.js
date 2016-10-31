@@ -1,7 +1,10 @@
 // See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Find
 function myFind(arr, callback) {
-
-//  CODE INSIDE HERE   //
+  for (i = 0; i<arr.length; i++){
+    if (callback(arr[i], i, arr)){
+      return arr[i];
+    }
+  }
 
 }
 
